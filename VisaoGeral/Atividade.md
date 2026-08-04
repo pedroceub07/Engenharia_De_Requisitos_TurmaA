@@ -12,7 +12,7 @@ Em duplas, respondam às seguintes questões:
 
 Quem utilizará o sistema?
 
-Cite 3 requisitos funcionais (o que o sistema deve fazer).      Resposta: Login, Registrar Alunos, Alterar e Apagar alunos.
+Cite 3 requisitos funcionais (o que o sistema deve fazer).  Controle de Registro de Alunos    Resposta: Login, Registrar Alunos, Alterar e Apagar alunos.
 
 Cite 2 requisitos não funcionais (como o sistema deve funcionar).      Resposta: Segurança e Usabilidade.
 
