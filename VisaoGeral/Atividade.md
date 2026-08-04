@@ -1,29 +1,36 @@
-Atividade 04/08
+Atividade – 04/08
+
 Atividade Prática – Introdução à Engenharia de Requisitos
-Objetivo: Compreender a importância da Engenharia de Requisitos e identificar requisitos básicos de um sistema.
 
-Tempo: 20 a 30 minutos
+Objetivo:
+Compreender a importância da Engenharia de Requisitos e identificar requisitos básicos de um sistema.
 
-Situação
-Imagine que uma escola deseja criar um sistema de controle de alunos.
+Situação:
+Uma escola deseja criar um sistema de controle de alunos.
 
-Atividade prática (2º tempo)
-Em duplas, respondam às seguintes questões:
+Registro De Cadastro Alunos
 
-Quem utilizará o sistema?
+Respostas
 
-Cite 3 requisitos funcionais (o que o sistema deve fazer).  Controle de Registro de Alunos    Resposta: Login, Registrar Alunos, Alterar e Apagar alunos.
+1. Quem utilizará o sistema?
+- Secretaria da escola
+- Professores
+- Coordenadores
+- Administradores do sistema
 
-Cite 2 requisitos não funcionais (como o sistema deve funcionar).      Resposta: Segurança e Usabilidade.
+2. Cite 3 requisitos funcionais (o que o sistema deve fazer).
+- Permitir o login dos usuários.
+- Cadastrar, consultar, editar e excluir alunos.
+- Emitir relatórios com as informações dos alunos.
 
-Explique, em poucas palavras, por que é importante levantar os requisitos antes de desenvolver um software.      Resposta: Para se organizar sobre oque você vai fazer e ver oque é e não é alcançável no momento de desenvolver o software.
+3. Cite 2 requisitos não funcionais (como o sistema deve funcionar).
+- Segurança: o sistema deve proteger os dados dos alunos e permitir acesso apenas a usuários autorizados.
+- Usabilidade: o sistema deve possuir uma interface simples e de fácil utilização.
 
-Socialização
-Duas duplas (ou dois grupos) apresentará uma resposta para a turma. Professora: discussão das diferentes soluções.
+4. Explique, em poucas palavras, por que é importante levantar os requisitos antes de desenvolver um software.
+É importante levantar os requisitos para entender as necessidades do sistema, organizar o desenvolvimento e evitar erros, retrabalho e funcionalidades desnecessárias.
 
 Pontos de Avaliação
-Participação na atividade.
-
-Identificação correta dos usuários do sistema.
-
-Elaboração adequada dos requisitos funcionais e não funcionais.
+- Participação na atividade.
+- Identificação correta dos usuários do sistema.
+- Elaboração adequada dos requisitos funcionais e não funcionais.
