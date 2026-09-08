@@ -334,22 +334,3 @@ Escolha uma característica da ISO/IEC 25010:2023 e produza:
 
 > Será realizado um teste de desempenho simulando até 500 usuários simultâneos, registrando o tempo de resposta das requisições e verificando se pelo menos 95% delas são concluídas em até 2 segundos.
 
-### Questão 6 — Produção textual
-
-**Característica escolhida: Eficiência de desempenho**
-
-**1. Requisito vago:**
-
-> O sistema deve ser rápido.
-
-**2. Requisito mensurável:**
-
-> O sistema deverá carregar a página de notas em até 2 segundos para pelo menos 95% das requisições realizadas com até 500 usuários simultâneos.
-
-**3. Critério de aceitação:**
-
-> O requisito será considerado atendido quando pelo menos 95% das requisições apresentarem tempo de resposta igual ou inferior a 2 segundos durante o teste.
-
-**4. Estratégia de teste:**
-
-> Será realizado um teste de desempenho simulando até 500 usuários simultâneos, registrando o tempo de resposta das requisições e verificando se pelo menos 95% delas são concluídas em até 2 segundos.
