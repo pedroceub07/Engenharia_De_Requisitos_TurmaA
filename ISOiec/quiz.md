@@ -194,135 +194,90 @@ Uma característica de qualidade é ampla. Para ser utilizada em um projeto, ela
 
 > O sistema deverá **[apresentar um comportamento ou propriedade]**, sob **[condições]**, atingindo **[valor ou limite]**, verificado por **[método de avaliação]**.
 
-## 8. Atividade prática — Avaliação de um sistema acadêmico
-
-**Organização:** grupos de três a cinco estudantes  
-**Entregável:** tabela de análise da qualidade  
-**Valor sugerido:** 0,5 ponto
-
-### Estudo de caso
-
-Uma instituição lançou um aplicativo acadêmico. Após o primeiro mês, foram registradas as seguintes ocorrências:
-
-1. O cálculo da média final apresenta valores incorretos.
-2. A página de notas demora aproximadamente 12 segundos para abrir.
-3. Estudantes têm dificuldade para localizar a renovação de matrícula.
-4. O aplicativo deixa de funcionar quando muitos usuários acessam simultaneamente.
-5. Um estudante conseguiu visualizar o histórico de outro usuário.
-6. Uma pequena alteração no cadastro provocou falhas em outros módulos.
-7. O aplicativo não consegue importar informações do sistema financeiro.
-8. A implantação em um novo servidor exige diversas alterações manuais.
-9. Em uma funcionalidade de laboratório, um equipamento pode ser acionado mesmo quando o sensor informa condição insegura.
-
-### Orientações
-
-Para cada ocorrência, o grupo deverá:
-
-1. identificar a característica de qualidade predominante;
-2. justificar a classificação;
-3. formular um requisito de qualidade mensurável ou verificável;
-4. estabelecer um critério de aceitação;
-5. indicar uma forma de teste ou avaliação.
-
-Uma mesma ocorrência pode envolver mais de uma característica. Quando isso acontecer, indique a característica predominante e explique as relações identificadas.
-
-### Formulário de resposta
+# 8. Atividade prática — Avaliação de um sistema acadêmico
 
 | Ocorrência | Característica predominante | Justificativa | Requisito de qualidade | Critério de aceitação | Teste ou avaliação |
 |---:|---|---|---|---|---|
-| 1 |  |  |  |  |  |
-| 2 |  |  |  |  |  |
-| 3 |  |  |  |  |  |
-| 4 |  |  |  |  |  |
-| 5 |  |  |  |  |  |
-| 6 |  |  |  |  |  |
-| 7 |  |  |  |  |  |
-| 8 |  |  |  |  |  |
-| 9 |  |  |  |  |  |
+| 1 | **Adequação funcional** | O sistema está realizando o cálculo da média final de forma incorreta. | O sistema deverá calcular a média final dos estudantes de acordo com as regras acadêmicas definidas pela instituição. | 100% dos cálculos realizados nos testes deverão apresentar o resultado correto. | Realizar testes com diferentes notas e comparar os resultados com os cálculos esperados. |
+| 2 | **Eficiência de desempenho** | A página de notas demora muito para carregar, prejudicando a utilização do sistema. | O sistema deverá carregar a página de notas em até 2 segundos para 95% das requisições. | Pelo menos 95% das requisições deverão ser concluídas em até 2 segundos. | Realizar testes de desempenho medindo o tempo de resposta da página. |
+| 3 | **Capacidade de interação** | Os estudantes têm dificuldade para encontrar a função de renovação de matrícula. | A opção de renovação de matrícula deverá estar disponível de forma clara e facilmente identificável no menu principal. | Pelo menos 90% dos usuários participantes do teste deverão encontrar a opção sem auxílio. | Realizar teste de usabilidade com estudantes. |
+| 4 | **Confiabilidade** | O aplicativo deixa de funcionar quando há muitos usuários acessando ao mesmo tempo. | O aplicativo deverá permanecer disponível e funcionando corretamente com pelo menos 1.000 usuários simultâneos. | O sistema deverá manter suas funções principais sem apresentar falhas durante o teste de carga. | Realizar teste de carga e estresse com usuários simultâneos. |
+| 5 | **Segurança** | Um estudante conseguiu acessar informações pertencentes a outro usuário sem autorização. | O sistema deverá permitir que cada usuário acesse somente as informações para as quais possui autorização. | Nenhum usuário deverá conseguir acessar dados de outro usuário sem permissão. | Realizar testes de controle de acesso e tentativa de acesso a dados de outros usuários. |
+| 6 | **Manutenibilidade** | Uma alteração em um módulo provocou falhas em outros módulos, indicando forte dependência entre eles. | O sistema deverá possuir componentes modularizados, permitindo alterações em um módulo sem causar falhas indevidas nos demais. | Alterações em um módulo não deverão provocar falhas nos demais módulos durante os testes de regressão. | Realizar alteração em um módulo e executar testes de regressão nos demais. |
+| 7 | **Compatibilidade** | O aplicativo não consegue importar informações do sistema financeiro. | O aplicativo deverá permitir a integração e importação dos dados necessários do sistema financeiro em formato previamente definido. | 100% dos dados válidos deverão ser importados corretamente, sem perda ou alteração indevida. | Realizar testes de integração utilizando dados do sistema financeiro. |
+| 8 | **Flexibilidade** | A implantação em um novo servidor exige muitas alterações manuais, dificultando a adaptação do sistema. | O sistema deverá permitir sua instalação em novos servidores previstos sem necessidade de alterações manuais no código-fonte. | A aplicação deverá ser instalada e executada no novo ambiente seguindo o procedimento de implantação documentado. | Realizar teste de implantação em um servidor diferente do ambiente original. |
+| 9 | **Proteção contra riscos (Safety)** | O equipamento pode ser acionado mesmo quando existe uma condição considerada insegura. | O sistema deverá impedir automaticamente o acionamento do equipamento quando o sensor indicar uma condição insegura. | Em 100% dos testes com condição insegura, o acionamento deverá ser bloqueado. | Simular condições inseguras e verificar se o sistema impede o acionamento. |
 
-## 9. Análise de conflitos de qualidade
+# 9. Análise de conflitos de qualidade
 
-As características de qualidade estão relacionadas. Uma decisão de projeto pode beneficiar uma característica e produzir impactos em outra.
+### 1. A inclusão de novas verificações de segurança pode produzir algum impacto no desempenho?
 
-Analise as situações:
+Sim. Novas verificações de segurança podem aumentar o processamento necessário para executar uma operação. Por isso, é importante encontrar um equilíbrio entre segurança e desempenho, garantindo que o sistema continue seguro sem ficar lento demais.
 
-1. A inclusão de novas verificações de segurança pode produzir algum impacto no desempenho? Explique.
-2. Como mecanismos adicionais de autenticação podem afetar a interação do usuário?
-3. Uma arquitetura muito flexível pode aumentar a complexidade de desenvolvimento e manutenção?
-4. Que impactos técnicos e financeiros podem surgir quando a equipe aumenta a redundância para melhorar a confiabilidade?
-5. Como a equipe deve decidir quais características terão maior prioridade em um projeto?
+### 2. Como mecanismos adicionais de autenticação podem afetar a interação do usuário?
 
-## 10. Exercícios de revisão
+Mecanismos adicionais, como autenticação em dois fatores, podem aumentar a segurança, mas também podem deixar o processo de acesso mais demorado ou complexo. O ideal é implementar a segurança sem prejudicar muito a experiência do usuário.
+
+### 3. Uma arquitetura muito flexível pode aumentar a complexidade de desenvolvimento e manutenção?
+
+Sim. Quanto mais flexível for a arquitetura, maior pode ser a complexidade do sistema. Isso pode exigir mais tempo de desenvolvimento, documentação e testes, além de aumentar a dificuldade de manutenção.
+
+### 4. Que impactos técnicos e financeiros podem surgir quando a equipe aumenta a redundância para melhorar a confiabilidade?
+
+A redundância pode aumentar a disponibilidade e diminuir o impacto de falhas, mas também pode gerar custos maiores com servidores, armazenamento, infraestrutura e manutenção. Tecnicamente, também pode aumentar a complexidade da arquitetura.
+
+### 5. Como a equipe deve decidir quais características terão maior prioridade em um projeto?
+
+A equipe deve analisar os objetivos do sistema, os usuários, os riscos e as necessidades do negócio. Por exemplo, em um sistema bancário, segurança e confiabilidade podem ter prioridade. Já em um sistema de alta demanda, desempenho e disponibilidade podem ser mais importantes.
+
+# 10. Exercícios de revisão
 
 ### Questão 1
 
-Um sistema apresenta todas as funções necessárias, mas leva 20 segundos para processar uma consulta. Qual característica está mais diretamente comprometida?
+**Resposta: B — Eficiência de desempenho.**
 
-A. Compatibilidade  
-B. Eficiência de desempenho  
-C. Manutenibilidade  
-D. Segurança
+O problema está relacionado ao tempo excessivo para processar uma consulta.
 
 ### Questão 2
 
-A capacidade de trocar dados corretamente com outro sistema está relacionada principalmente a:
+**Resposta: A — Compatibilidade.**
 
-A. Compatibilidade  
-B. Confiabilidade  
-C. Proteção contra riscos  
-D. Adequação funcional
+A compatibilidade está relacionada à capacidade de um sistema trocar informações e trabalhar com outros sistemas.
 
 ### Questão 3
 
-Qual alternativa representa um requisito mensurável?
+**Resposta: D — A consulta deve ser concluída em até dois segundos para 95% das requisições.**
 
-A. O sistema deve ser intuitivo.  
-B. O sistema deve ser bastante seguro.  
-C. O sistema deve ser moderno.  
-D. A consulta deve ser concluída em até dois segundos para 95% das requisições.
+Essa alternativa apresenta uma condição e um valor que podem ser medidos e testados.
 
 ### Questão 4
 
-A facilidade para alterar e testar um componente está relacionada a:
+**Resposta: B — Manutenibilidade.**
 
-A. Flexibilidade  
-B. Manutenibilidade  
-C. Compatibilidade  
-D. Capacidade de interação
+A manutenibilidade está relacionada à facilidade de compreender, modificar e testar o sistema.
 
 ### Questão 5
 
-Impedir que um sistema hospitalar execute uma operação que coloque o paciente em risco está relacionado principalmente a:
+**Resposta: C — Proteção contra riscos (*safety*).**
 
-A. Adequação funcional  
-B. Eficiência de desempenho  
-C. Proteção contra riscos (*safety*)  
-D. Compatibilidade
+O objetivo é impedir que uma operação cause danos ou coloque pessoas em risco.
 
 ### Questão 6 — Produção textual
 
-Escolha uma característica da ISO/IEC 25010:2023 e produza:
+**Característica escolhida: Eficiência de desempenho**
 
-1. um exemplo de requisito vago;
-2. uma versão mensurável ou verificável desse requisito;
-3. um critério de aceitação;
-4. uma estratégia de teste.
+**1. Requisito vago:**
 
-## 11. Síntese para estudo
+> O sistema deve ser rápido.
 
-- Qualidade de software não significa apenas ausência de erros.
-- A ISO/IEC 25010 oferece uma linguagem comum para discutir a qualidade de produtos.
-- A edição de 2023 apresenta nove características de qualidade.
-- As características relevantes devem ser selecionadas conforme o contexto, os usuários e os riscos do produto.
-- Um requisito de qualidade deve apresentar condições e critérios que permitam sua verificação.
+**2. Requisito mensurável:**
 
-> **Para lembrar:** uma característica indica **o que observar**; uma medida define **como avaliar**; e um critério de aceitação determina **qual resultado será considerado satisfatório**.
+> O sistema deverá carregar a página de notas em até 2 segundos para pelo menos 95% das requisições realizadas com até 500 usuários simultâneos.
 
-## 12. Referências
+**3. Critério de aceitação:**
 
-- INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO/IEC 25010:2023 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model**. 2. ed. Genebra: ISO, 2023. Disponível em: <https://www.iso.org/standard/78176.html>.
-- INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO/IEC 25002:2024 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model overview and usage**. Genebra: ISO, 2024. Disponível em: <https://www.iso.org/standard/78175.html>.
+> O requisito será considerado atendido quando pelo menos 95% das requisições apresentarem tempo de resposta igual ou inferior a 2 segundos durante o teste.
 
----
+**4. Estratégia de teste:**
 
-**Material de apoio ao estudante — ISO/IEC 25010:2023**
+> Será realizado um teste de desempenho simulando até 500 usuários simultâneos, registrando o tempo de resposta das requisições e verificando se pelo menos 95% delas são concluídas em até 2 segundos.
