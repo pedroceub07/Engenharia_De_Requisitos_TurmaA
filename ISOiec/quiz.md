@@ -333,4 +333,23 @@ Escolha uma característica da ISO/IEC 25010:2023 e produza:
 **4. Estratégia de teste:**
 
 > Será realizado um teste de desempenho simulando até 500 usuários simultâneos, registrando o tempo de resposta das requisições e verificando se pelo menos 95% delas são concluídas em até 2 segundos.
+>
+> ## 11. Síntese para estudo
+
+- Qualidade de software não significa apenas ausência de erros.
+- A ISO/IEC 25010 oferece uma linguagem comum para discutir a qualidade de produtos.
+- A edição de 2023 apresenta nove características de qualidade.
+- As características relevantes devem ser selecionadas conforme o contexto, os usuários e os riscos do produto.
+- Um requisito de qualidade deve apresentar condições e critérios que permitam sua verificação.
+
+> **Para lembrar:** uma característica indica **o que observar**; uma medida define **como avaliar**; e um critério de aceitação determina **qual resultado será considerado satisfatório**.
+
+## 12. Referências
+
+- INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO/IEC 25010:2023 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model**. 2. ed. Genebra: ISO, 2023. Disponível em: <https://www.iso.org/standard/78176.html>.
+- INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO/IEC 25002:2024 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model overview and usage**. Genebra: ISO, 2024. Disponível em: <https://www.iso.org/standard/78175.html>.
+
+---
+
+**Material de apoio ao estudante — ISO/IEC 25010:2023**
 
