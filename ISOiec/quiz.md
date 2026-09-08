@@ -234,33 +234,105 @@ A equipe deve analisar os objetivos do sistema, os usuários, os riscos e as nec
 
 ### Questão 1
 
+Um sistema apresenta todas as funções necessárias, mas leva 20 segundos para processar uma consulta. Qual característica está mais diretamente comprometida?
+
+A. Compatibilidade  
+B. Eficiência de desempenho  
+C. Manutenibilidade  
+D. Segurança
+
 **Resposta: B — Eficiência de desempenho.**
 
 O problema está relacionado ao tempo excessivo para processar uma consulta.
 
+---
+
 ### Questão 2
+
+A capacidade de trocar dados corretamente com outro sistema está relacionada principalmente a:
+
+A. Compatibilidade  
+B. Confiabilidade  
+C. Proteção contra riscos  
+D. Adequação funcional
 
 **Resposta: A — Compatibilidade.**
 
 A compatibilidade está relacionada à capacidade de um sistema trocar informações e trabalhar com outros sistemas.
 
+---
+
 ### Questão 3
+
+Qual alternativa representa um requisito mensurável?
+
+A. O sistema deve ser intuitivo.  
+B. O sistema deve ser bastante seguro.  
+C. O sistema deve ser moderno.  
+D. A consulta deve ser concluída em até dois segundos para 95% das requisições.
 
 **Resposta: D — A consulta deve ser concluída em até dois segundos para 95% das requisições.**
 
 Essa alternativa apresenta uma condição e um valor que podem ser medidos e testados.
 
+---
+
 ### Questão 4
+
+A facilidade para alterar e testar um componente está relacionada a:
+
+A. Flexibilidade  
+B. Manutenibilidade  
+C. Compatibilidade  
+D. Capacidade de interação
 
 **Resposta: B — Manutenibilidade.**
 
 A manutenibilidade está relacionada à facilidade de compreender, modificar e testar o sistema.
 
+---
+
 ### Questão 5
+
+Impedir que um sistema hospitalar execute uma operação que coloque o paciente em risco está relacionado principalmente a:
+
+A. Adequação funcional  
+B. Eficiência de desempenho  
+C. Proteção contra riscos (*safety*)  
+D. Compatibilidade
 
 **Resposta: C — Proteção contra riscos (*safety*).**
 
 O objetivo é impedir que uma operação cause danos ou coloque pessoas em risco.
+
+---
+
+### Questão 6 — Produção textual
+
+Escolha uma característica da ISO/IEC 25010:2023 e produza:
+
+1. um exemplo de requisito vago;
+2. uma versão mensurável ou verificável desse requisito;
+3. um critério de aceitação;
+4. uma estratégia de teste.
+
+**Característica escolhida: Eficiência de desempenho**
+
+**1. Requisito vago:**
+
+> O sistema deve ser rápido.
+
+**2. Requisito mensurável:**
+
+> O sistema deverá carregar a página de notas em até 2 segundos para pelo menos 95% das requisições realizadas com até 500 usuários simultâneos.
+
+**3. Critério de aceitação:**
+
+> O requisito será considerado atendido quando pelo menos 95% das requisições apresentarem tempo de resposta igual ou inferior a 2 segundos durante o teste.
+
+**4. Estratégia de teste:**
+
+> Será realizado um teste de desempenho simulando até 500 usuários simultâneos, registrando o tempo de resposta das requisições e verificando se pelo menos 95% delas são concluídas em até 2 segundos.
 
 ### Questão 6 — Produção textual
 
